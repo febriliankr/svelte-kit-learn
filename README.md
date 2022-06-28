@@ -63,3 +63,11 @@ function addNumber(){
 
 https://github.com/rob-balfre/svelte-select
 https://svelte.dev/repl/a859c2ba7d1744af9c95037c48989193?version=3.12.1
+
+## Router
+
+```
+import { page } from '$app/stores';
+
+<div>{$page.url.pathname}</div>
+```

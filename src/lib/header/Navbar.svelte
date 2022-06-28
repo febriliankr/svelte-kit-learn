@@ -11,36 +11,42 @@
 			text: 'About'
 		},
 		{
-			href: '/contact',
-			text: 'Contact'
+			href: '/profile/febrilian',
+			text: 'Febrilian'
 		}
 	];
 </script>
 
 <header>
-	<div class="bg-indigo-600 pb-32">
+	<div class="bg-orange-600 pb-32">
 		<nav
-			class="bg-indigo-600 border-b border-indigo-300 border-opacity-25 lg:border-none fixed w-screen z-10"
+			class="bg-orange-600 border-b border-orange-300 border-opacity-25 lg:border-none fixed w-screen z-10"
 		>
 			<div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
 				<div
-					class="relative h-16 flex items-center justify-between lg:border-b lg:border-indigo-400 lg:border-opacity-25"
+					class="relative h-16 flex items-center justify-between lg:border-b lg:border-orange-400 lg:border-opacity-25"
 				>
 					<div class="px-2 flex items-center lg:px-0">
 						<a class="flex-shrink-0 hover:opacity-75" href="/"
-							><img
-								class="block h-8 w-8"
-								src="https://tailwindui.com/img/logos/workflow-mark-indigo-300.svg"
-								alt="Logo"
-							/></a
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-6 w-6"
+								viewBox="0 0 20 20"
+								fill="white"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+									clip-rule="evenodd"
+								/>
+							</svg></a
 						>
 						<div class="block lg:ml-10">
 							<div class="flex space-x-4">
 								{#each links as item}
 									<a
-										class={'hidden lg:inline bg-indigo-700 text-white rounded-md py-2 px-3 text-sm font-medium' +
-											' ' +
-											''}
+										class={`hidden lg:inline text-white rounded-md py-2 px-3 text-sm font-medium ` +
+											`${$page.url.pathname === item.href ? 'bg-orange-700' : ''}`}
 										aria-current="page"
 										href={item.href}>{item.text}</a
 									>
@@ -72,7 +78,7 @@
 								<input
 									type="search"
 									id="search"
-									class="block w-full bg-white py-2 pl-10 pr-3 border border-transparent rounded-md leading-5 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white focus:border-white sm:text-sm"
+									class="block w-full bg-white py-2 pl-10 pr-3 border border-transparent rounded-md leading-5 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-orange-600 focus:ring-white focus:border-white sm:text-sm"
 									placeholder="Cari"
 									name="search"
 									value=""
@@ -82,7 +88,7 @@
 					</div>
 					<div class="flex lg:hidden">
 						<button
-							class="bg-indigo-600 p-2 rounded-md inline-flex items-center justify-center text-indigo-200 hover:text-white hover:bg-indigo-500 hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white"
+							class="bg-orange-600 p-2 rounded-md inline-flex items-center justify-center text-orange-200 hover:text-white hover:bg-orange-500 hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-orange-600 focus:ring-white"
 							id="headlessui-disclosure-button-1"
 							type="button"
 							aria-expanded="false"
@@ -108,7 +114,7 @@
 		</nav>
 		<header class="translate-y-11 py-10">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row">
-				<h1 class="text-3xl font-bold text-white">Learning Svelte</h1>
+				<h1 class="text-3xl font-bold text-white">Svelte Tailwind TS</h1>
 				<div class="mt-4 sm:-mt-1 sm:ml-6" />
 			</div>
 		</header>
