@@ -1,38 +1,65 @@
-# create-svelte
+# Learning Sveltekit
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Seeing if sveltekit has everything I need to replace nextjs
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Parse HTML
 
-```bash
-# create a new project in the current directory
-npm init svelte
-
-# create a new project in my-app
-npm init svelte my-app
+```
+<p>{@html htmlContent}</p>
 ```
 
-## Developing
+instead of dangerouslySetInnerHTML in react, which is fucking ridiculous. It means I can just parse JSON, and parse it to html like this:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```
+<script>
+const postHTML = res.postHTML;
+</script>
 
-```bash
-npm run dev
+<article>
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+{@html postHTML}
+
+</article>
 ```
 
-## Building
+on:click event
 
-To create a production version of your app:
-
-```bash
-npm run build
+```
+<button on:click={handleClick}>
 ```
 
-You can preview the production build with `npm run preview`.
+## useEffect equivalent
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+useEffect equivalent is just this!
+
+```
+$: {
+	console.log('the count is ' + count);
+}
+```
+
+## setState action
+
+```
+function addNumber(){
+  const newNumbers = [...numbers, numbers.length+1]
+  numbers = newNumbers
+}
+```
+
+## Props
+
+    export let answer
+    export let name='defaultname'
+
+    <Nested answer={42} name={name}/>
+
+## Table Components
+
+@tanstack/svelte-table
+
+## Select Component
+
+https://github.com/rob-balfre/svelte-select
+https://svelte.dev/repl/a859c2ba7d1744af9c95037c48989193?version=3.12.1
