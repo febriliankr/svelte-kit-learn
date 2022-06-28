@@ -22,7 +22,7 @@
 		<nav
 			class="bg-orange-600 border-b border-orange-300 border-opacity-25 lg:border-none fixed w-screen z-10"
 		>
-			<div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+			<div class="max-w-6xl mx-auto px-2 sm:px-4 lg:px-8">
 				<div
 					class="relative h-16 flex items-center justify-between lg:border-b lg:border-orange-400 lg:border-opacity-25"
 				>
@@ -113,7 +113,7 @@
 			</div>
 		</nav>
 		<header class="translate-y-11 py-10">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row">
+			<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row">
 				<h1 class="text-3xl font-bold text-white">Svelte Tailwind TS</h1>
 				<div class="mt-4 sm:-mt-1 sm:ml-6" />
 			</div>

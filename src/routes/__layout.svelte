@@ -6,7 +6,7 @@
 <Header />
 
 <main class="-mt-24 px-2">
-	<div class="bg-white min-h-[500px] max-w-7xl rounded-md p-4 mx-auto">
+	<div class="bg-white min-h-[500px] max-w-6xl rounded-md p-4 mx-auto">
 		<slot />
 	</div>
 </main>
