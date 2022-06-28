@@ -2,51 +2,9 @@
 	export const prerender = true;
 </script>
 
-<script lang="ts">
-	const allowedEmoji = '😊🙃🤪🤓🤯😴💩👻👽🤖👾👐🖖✌️🤟🤘🤙👋🐭🦕🦖🐉';
-	const data = [
-		{
-			uid: '1',
-			created_at: new Date(),
-			text: 'Learn Svelte',
-			done: false
-		},
-		{
-			uid: '2',
-			created_at: new Date(),
-			text: 'Learn Svelte',
-			done: false
-		},
-		{
-			uid: '3',
-			created_at: new Date(),
-			text: 'Learn Svelte',
-			done: false
-		},
-		{
-			uid: '4',
-			created_at: new Date(),
-			text: 'Learn Svelte',
-			done: false
-		},
-		{
-			uid: '5',
-			created_at: new Date(),
-			text: 'Learn Svelte',
-			done: false
-		},
-		{
-			uid: '6',
-			created_at: new Date(),
-			text: 'Learn Svelte',
-			done: false
-		}
-	];
-</script>
-
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Sveltekit Tailwind Starter" />
 </svelte:head>
 
 <section>
@@ -79,8 +37,6 @@
 				/></svg
 			>
 		</div>
-		<h1 class="font-bold text-3xl text-slate-700">
-			Starter Template for Svelte and Tailwind
-		</h1>
+		<h1 class="font-bold text-3xl text-slate-700">Starter Template for Svelte and Tailwind</h1>
 	</div>
 </section>
