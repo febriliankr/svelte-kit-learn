@@ -1,0 +1,165 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "svelte-kit-learn",
+      "version": "0.0.1",
+      "scripts": {
+        "dev": "svelte-kit dev",
+        "build": "svelte-kit build",
+        "package": "svelte-kit package",
+        "preview": "svelte-kit preview",
+        "prepare": "svelte-kit sync",
+        "test": "playwright test",
+        "check": "svelte-check --tsconfig ./tsconfig.json",
+        "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+        "lint": "prettier --check --plugin-search-dir=. . && eslint .",
+        "format": "prettier --write --plugin-search-dir=. ."
+      },
+      "devDependencies": {
+        "@playwright/test": "^1.22.2",
+        "@sveltejs/adapter-auto": "next",
+        "@sveltejs/kit": "next",
+        "@types/cookie": "^0.5.1",
+        "@typescript-eslint/eslint-plugin": "^5.27.0",
+        "@typescript-eslint/parser": "^5.27.0",
+        "eslint": "^8.16.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-svelte3": "^4.0.0",
+        "prettier": "^2.6.2",
+        "prettier-plugin-svelte": "^2.7.0",
+        "svelte": "^3.46.0",
+        "svelte-check": "^2.7.1",
+        "svelte-preprocess": "^4.10.6",
+        "tslib": "^2.3.1",
+        "typescript": "^4.7.2"
+      },
+      "type": "module",
+      "dependencies": {
+        "@fontsource/fira-mono": "^4.5.0",
+        "cookie": "^0.4.1"
+      }
+    },
+    "prefix": "/Users/febrilian/Documents/dev/svelte-kit-learn"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/febrilian/.pnpm-store/v3",
+    "virtualStoreDir": "/Users/febrilian/Documents/dev/svelte-kit-learn/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/febrilian/Documents/dev/svelte-kit-learn",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/cookie/0.5.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/cookie",
+      "rawSpec": "^0.5.1"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/cookie/0.5.1",
+    "requester": "/Users/febrilian/Documents/dev/svelte-kit-learn",
+    "status": "resolved"
+  },
+  "6 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/cookie/0.5.1",
+    "requester": "/Users/febrilian/Documents/dev/svelte-kit-learn",
+    "status": "found_in_store"
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier/2.7.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier",
+      "rawSpec": "^2.6.2"
+    }
+  },
+  "8 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.7.1",
+    "requester": "/Users/febrilian/Documents/dev/svelte-kit-learn",
+    "status": "resolved"
+  },
+  "9 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-preprocess/4.10.7",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-preprocess",
+      "rawSpec": "^4.10.6"
+    }
+  },
+  "10 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-preprocess/4.10.7",
+    "requester": "/Users/febrilian/Documents/dev/svelte-kit-learn",
+    "status": "resolved"
+  },
+  "11 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/prettier/2.7.1",
+    "size": 3977924,
+    "status": "started"
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/tslib/2.4.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "tslib",
+      "rawSpec": "^2.3.1"
+    }
+  },
+  "13 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tslib/2.4.0",
+    "requester": "/Users/febrilian/Documents/dev/svelte-kit-learn",
+    "status": "resolved"
+  },
+  "14 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tslib/2.4.0",
+    "requester": "/Users/febrilian/Documents/dev/svelte-kit-learn",
+    "status": "found_in_store"
+  },
+  "15 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint/8.18.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint",
+      "rawSpec": "^8.16.0"
+    }
+  },
+  "16 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint/8.18.0",
+    "requester": "/Users/febrilian/Documents/dev/svelte-kit-learn",
+    "status": "resolved"
+  },
+  "17 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/svelte-preprocess/4.10.7",
+    "size": 22985,
+    "status": "started"
+  },
+  "18 warn pnpm:install-check": {
+    "message": "Unsupported engine for registry.npmjs.org/@sveltejs/kit/1.0.0-next.355: wanted: {\"node\":\">=16.7\"} (current: {\"node\":\"v14.18.1\",\"pnpm\":\"6.23.2\"})",
+    "prefix": "/Users/febrilian/Documents/dev/svelte-kit-learn"
+  },
+  "19 error pnpm": {
+    "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+    "packageId": "registry.npmjs.org/@sveltejs/kit/1.0.0-next.355",
+    "wanted": {
+      "node": ">=16.7"
+    },
+    "current": {
+      "node": "v14.18.1",
+      "pnpm": "6.23.2"
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "Unsupported engine for registry.npmjs.org/@sveltejs/kit/1.0.0-next.355: wanted: {\"node\":\">=16.7\"} (current: {\"node\":\"v14.18.1\",\"pnpm\":\"6.23.2\"})",
+      "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+      "stack": "pnpm: Unsupported engine for registry.npmjs.org/@sveltejs/kit/1.0.0-next.355: wanted: {\"node\":\">=16.7\"} (current: {\"node\":\"v14.18.1\",\"pnpm\":\"6.23.2\"})\n    at checkEngine (/Users/febrilian/.nvm/versions/node/v14.18.1/lib/node_modules/pnpm/dist/pnpm.cjs:36026:16)\n    at checkPackage (/Users/febrilian/.nvm/versions/node/v14.18.1/lib/node_modules/pnpm/dist/pnpm.cjs:38114:104)\n    at packageIsInstallable (/Users/febrilian/.nvm/versions/node/v14.18.1/lib/node_modules/pnpm/dist/pnpm.cjs:38084:20)\n    at resolveAndFetch (/Users/febrilian/.nvm/versions/node/v14.18.1/lib/node_modules/pnpm/dist/pnpm.cjs:71392:117)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async resolveDependency (/Users/febrilian/.nvm/versions/node/v14.18.1/lib/node_modules/pnpm/dist/pnpm.cjs:112471:23)\n    at async resolveDependenciesOfDependency (/Users/febrilian/.nvm/versions/node/v14.18.1/lib/node_modules/pnpm/dist/pnpm.cjs:112306:39)\n    at async Promise.all (index 2)\n    at async resolveDependencies (/Users/febrilian/.nvm/versions/node/v14.18.1/lib/node_modules/pnpm/dist/pnpm.cjs:112273:29)\n    at async /Users/febrilian/.nvm/versions/node/v14.18.1/lib/node_modules/pnpm/dist/pnpm.cjs:112802:47"
+    }
+  }
+}
