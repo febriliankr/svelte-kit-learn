@@ -1,9 +1,9 @@
 import type { Handle } from '@sveltejs/kit';
 import * as cookie from 'cookie';
-
+import { v4 as uuidv4 } from 'uuid';
 export const handle: Handle = async ({ event, resolve }) => {
 	const cookies = cookie.parse(event.request.headers.get('cookie') || '');
-	event.locals.userid = cookies['userid'] || crypto.randomUUID();
+	event.locals.userid = cookies['userid'] || uuidv4();
 
 	const response = await resolve(event);
 

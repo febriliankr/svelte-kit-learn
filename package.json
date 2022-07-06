@@ -39,6 +39,7 @@
 		"@fontsource/fira-mono": "^4.5.0",
 		"axios": "^0.27.2",
 		"cookie": "^0.4.1",
-		"svelte-query": "link:@types@sveltestack/svelte-query"
+		"svelte-query": "link:@types@sveltestack/svelte-query",
+		"uuid": "^8.3.2"
 	}
 }
